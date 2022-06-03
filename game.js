@@ -22,9 +22,18 @@ $(document).keydown(function(){
     nextSequence()
     started = true
   }
-
 });
 
+
+
+$(".start").click(function(){
+  
+  if(!started){
+    nextSequence()
+    started = true
+  }   
+  
+})
 $(".btn").click(function(){
 
   var userChosenColor = $(this).attr("id")
